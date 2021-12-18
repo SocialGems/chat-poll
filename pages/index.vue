@@ -94,10 +94,10 @@ export default defineComponent({
       setTimeout(() => {
         winningEntry.value = currentPoll.value?.entries.sort(entry => entry.votes)[0];
         currentPoll.value = null
-      }, 5000) //pollDuration
+      }, pollDuration) //pollDuration
 
       setTimeout(() => pollTriggered = false, 10000); //repeatEvery
-    }, 100);
+    }, repeatEvery);
 
   },
   methods: {
