@@ -102,7 +102,7 @@ export default defineComponent({
   },
   methods: {
     getPercentage(entry: PollEntry) {
-      return (entry.votes / alreadyVoted.value.length) * 100;
+      return alreadyVoted.value.length !== 0 ? (entry.votes / alreadyVoted.value.length) * 100 : 0;
     }
   }
 })
