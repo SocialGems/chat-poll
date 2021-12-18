@@ -77,8 +77,8 @@ export default {
   },
   publicRuntimeConfig: {
     entryCount: 3,
-    repeatEvery: 5,
-    pollDuration: 1,
+    repeatEvery: 15 * 60,
+    pollDuration: 5 * 60,
     pollTitle: 'POLL_TITLE',
     channel: 'CHANNEL_NAME',
     clientId: 'CLIENT_ID', //https://twitchtokengenerator.com/
