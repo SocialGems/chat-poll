@@ -10,7 +10,7 @@
       <template v-for="entry in currentPoll.entries">
         <h3>{{ entry.title }}</h3>
         <v-progress-linear v-bind:value="getPercentage(entry)" color="blue" height="25">
-          <strong>{{ entry.votes }}%</strong>
+          <strong>{{ entry.votes * 100 }}%</strong>
         </v-progress-linear>
       </template>
     </div>
