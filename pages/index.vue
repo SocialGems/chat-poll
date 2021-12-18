@@ -2,7 +2,7 @@
   <div>
     <div>
       <h1>Momentane Challenge</h1>
-      <h3 v-if="winningEntry == null"></h3>
+      <h3 v-if="winningEntry == null">Keine</h3>
       <h3 v-else>{{ winningEntry.title }} ({{ winningEntry.votes }} Votes)</h3>
     </div>
     <br/>
