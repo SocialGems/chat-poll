@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div v-if="winningEntry != null">
+    <div>
       <h1>Momentane Challenge</h1>
-      <h3>{{ winningEntry.title }} ({{ winningEntry.votes }} Votes)</h3>
+      <h3 v-if="winningEntry == null"></h3>
+      <h3 v-else>{{ winningEntry.title }} ({{ winningEntry.votes }} Votes)</h3>
     </div>
     <br/>
     <div v-if="currentPoll">
