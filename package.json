@@ -1,0 +1,39 @@
+{
+  "name": "chat-poll",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/composition-api": "^0.31.0",
+    "core-js": "^3.19.3",
+    "net": "^1.0.2",
+    "nuxt": "^2.15.8",
+    "nuxt-property-decorator": "^2.9.1",
+    "tls": "^0.0.1",
+    "twitch": "^4.6.7",
+    "twitch-auth": "^4.6.7",
+    "twitch-chat-client": "^4.6.7",
+    "typeconf": "^0.6.2",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify": "^2.6.1",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "vuex-module-decorators": "^2.0.0"
+  },
+  "description": "## Build Setup",
+  "main": "nuxt.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
