@@ -96,8 +96,8 @@ export default defineComponent({
         currentPoll.value = null
       }, pollDuration) //pollDuration
 
-      setTimeout(() => pollTriggered = false, 10000); //repeatEvery
-    }, repeatEvery);
+      setTimeout(() => pollTriggered = false, repeatEvery);
+    }, 100);
 
   },
   methods: {
