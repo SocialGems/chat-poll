@@ -60,7 +60,7 @@ export default defineComponent({
       alreadyVoted
     }
   },
-  asyncData(ctx: Context): Promise<object | void> | object | void {
+  asyncData: function (ctx: Context): Promise<object | void> | object | void {
     const questions = ctx.$config.questions;
     const entryCount = ctx.$config.entryCount;
     const pollTitle = ctx.$config.pollTitle;
@@ -93,7 +93,7 @@ export default defineComponent({
       currentPoll.value = new Poll(pollTitle, pollEntries);
 
       setTimeout(() => {
-        winningEntry.value = currentPoll.value?.entries.sort(entry => entry.votes)[0];
+        winningEntry.value = currentPoll.value?.entries.sort((a, b) => a.votes < b.votes ? 1 : -1)[0];
         currentPoll.value = null
       }, pollDuration) //pollDuration
 
