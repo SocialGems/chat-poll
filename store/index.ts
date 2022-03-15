@@ -4,7 +4,6 @@ export const state = () => ({
 
 export const mutations = {
   startPoll(state) {
-
     state.startPoll = true;
   },
   stopPoll(state) {
