@@ -11,9 +11,6 @@ import {defineComponent, ref, useContext} from '@nuxtjs/composition-api'
 let votePhase = ref(true);
 
 export default defineComponent({
-  setup() {
-
-  },
   methods: {
     startPoll(){
       localStorage.setItem('startPoll', 'true');
